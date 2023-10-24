@@ -1,0 +1,35 @@
+{
+  "name": "whichcat",
+  "version": "0.0.1",
+  "description": "oauth2 integrated server",
+  "main": "dist/main.js",
+  "module": "dist/main.mjs",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "test": "vitest run",
+    "lint": "tsc",
+    "build": "tsup src/main.ts --format cjs,esm --dts",
+    "start": "node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sithsithsith/whichcat.git"
+  },
+  "keywords": [
+    "nodejs",
+    "oauth2"
+  ],
+  "author": "ZST",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sithsithsith/whichcat/issues"
+  },
+  "homepage": "https://github.com/sithsithsith/whichcat#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
+  },
+  "packageManager": "^pnpm@8.0.0"
+}
